@@ -1,6 +1,6 @@
 name: dcd
 version: 0.11.0
-summary: The D Completion Daemon is an auto-complete program for the D programming language
+summary: An auto-complete program for the D programming language
 description: |
     The D Completion Daemon, is a cross platform auto-complete 
     service for the D programming language. 
