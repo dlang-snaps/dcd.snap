@@ -47,3 +47,22 @@ replacing `VERSION` as appropriate.
 
 For more information on `classic` confinement, see:
 https://insights.ubuntu.com/2017/01/09/how-to-snap-introducing-classic-confinement/
+
+
+Configuration
+----------
+
+To make the DCD server work properly, you must manually specify the 
+import directories paths for D module imports, this snap does not do 
+this automatically to allow the user to use dmd with any druntime + phobos configuration.
+
+If you simply want to configure DCD to work with our DMD package (snapcraft.io/dmd) 
+you just need to run this command which will enable the import paths of the 
+DMD snap package in the current user:
+
+    echo -e "/snap/dmd/current/import/druntime\n/snap/dmd/current/import/phobos" > ~/.config/dcd/dcd.conf
+    
+For other dmd, druntime and phobos providers, consult their documentation 
+to find out their import path.
+
+More information is available on the official DCD documentation: https://github.com/dlang-community/DCD#configuration-files
