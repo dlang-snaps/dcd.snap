@@ -1,5 +1,5 @@
 name: dcd
-version: 0.11.0
+version: 0.11.1
 summary: An auto-complete program for the D programming language
 description: |
     The D Completion Daemon, is a cross platform auto-complete 
@@ -19,7 +19,7 @@ apps:
 parts:
   dcd:
     source: https://github.com/dlang-community/DCD.git
-    source-tag: v0.11.0
+    source-tag: v0.11.1
     source-type: git
     plugin: make
     makefile: makefile
