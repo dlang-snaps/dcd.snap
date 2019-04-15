@@ -11,10 +11,8 @@ grade: stable
 apps:
   dcd-client:
     command: env XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR%/*}" bin/dcd-client
-    aliases: [dcd-client]
   dcd-server:
     command: env XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR%/*}" bin/dcd-server
-    aliases: [dcd-server]
 
 parts:
   dcd:
