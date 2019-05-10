@@ -1,10 +1,12 @@
 name: dcd
 version: 0.11.1
-summary: An auto-complete program for the D programming language
+summary: Auto-completion service for the D programming language
 description: |
-    The D Completion Daemon, is a cross platform auto-complete 
-    service for the D programming language. 
-    It's used by several text editors and IDE to get IDE-grade features.
+  The D Completion Daemon (DCD) provides auto-completion support
+  for the D programming language via a simple client-server setup.
+  The dcd-client app can be used to connect text editors and IDEs
+  to the auto-completion service, while dcd-server provides the
+  underlying service daemon.
 confinement: classic
 grade: stable
 
